@@ -1,0 +1,85 @@
+/* Estilo de la barra superior */
+.navbar {
+    background-color: #0c559e; /* Azul marino intermedio */
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Subtítulo */
+h2 {
+    color: #FFFFFF;
+}
+
+/* Barra de navegación con color negro y texto blanco */
+nav {
+    background-color: #767474; /* Barra de navegación negra */
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    background-color: #555555; /* Cambio de color al pasar el mouse */
+    border-radius: 5px;
+}
+
+/* Estilo para el cuerpo de la página */
+body {
+    font-size: 18px; /* Aumentar tamaño de la fuente */
+    line-height: 1.6;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Contenido principal de la página (ocupa todo el ancho) */
+.content {
+    max-width: 90%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Estilo para la hoja de ruta */
+.roadmap {
+    margin-top: 20px;
+    font-size: 20px; /* Aumentar tamaño de fuente en la hoja de ruta */
+}
+
+.roadmap ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.roadmap li {
+    padding: 10px;
+}
+
+/* Estilo para los enlaces */
+a {
+    color: #227bd4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #0055CC;
+}
+
+/* Estilo para los contenedores ocultos */
+.hidden-content {
+    display: none;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

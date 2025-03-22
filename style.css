@@ -1,85 +1,113 @@
-/* Estilo de la barra superior */
+/* Establecer la fuente y los márgenes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Establecer un fondo gris claro para todo el body */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    font-size: 16px;
+}
+
+/* Estilo del header */
 .navbar {
-    background-color: #0c559e; /* Azul marino intermedio */
-    color: white;
-    padding: 15px;
+    width: 100%;
+    background-color: #005A9C;
+    color: #fff;
     text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Subtítulo */
-h2 {
-    color: #FFFFFF;
-}
-
-/* Barra de navegación con color negro y texto blanco */
+/* Estilo del nav */
 nav {
-    background-color: #767474; /* Barra de navegación negra */
-    padding: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #3D5A80;
+    padding: 15px;
+    width: 100%;
+    margin-top: 60px;
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding: 14px 20px;
-    font-weight: bold;
+    padding: 10px 15px;
     margin: 0 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background-color: #555555; /* Cambio de color al pasar el mouse */
-    border-radius: 5px;
+    background-color: #98C9E2;
+    color: #333;
 }
 
-/* Estilo para el cuerpo de la página */
-body {
-    font-size: 18px; /* Aumentar tamaño de la fuente */
-    line-height: 1.6;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-/* Contenido principal de la página (ocupa todo el ancho) */
+/* Estilo del contenedor de contenido */
 .content {
-    max-width: 90%;
+    max-width: 800px;
+    width: 90%;
+    margin-top: 100px;
     padding: 20px;
-    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para la hoja de ruta */
-.roadmap {
-    margin-top: 20px;
-    font-size: 20px; /* Aumentar tamaño de fuente en la hoja de ruta */
+/* Estilo para las secciones ocultas */
+.hidden-content {
+    display: none;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-left: 5px solid #005A9C;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.roadmap ul {
-    list-style-type: none;
+/* Animación de aparición */
+.hidden-content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo de las listas */
+ul {
+    list-style: none;
     padding: 0;
 }
 
-.roadmap li {
-    padding: 10px;
+li {
+    padding: 12px;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: 500;
 }
 
-/* Estilo para los enlaces */
+/* Enlaces dentro del contenido */
 a {
-    color: #227bd4;
+    color: #005A9C;
     text-decoration: none;
     font-weight: bold;
 }
 
 a:hover {
-    color: #0055CC;
-}
-
-/* Estilo para los contenedores ocultos */
-.hidden-content {
-    display: none;
-    margin-top: 20px;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    color: #3D5A80;
+    text-decoration: underline;
 }

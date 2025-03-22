@@ -1,18 +1,10 @@
 function showContent(contentId) {
-    // Ocultar todos los contenidos
-    var allContents = document.querySelectorAll('.hidden-content');
-    allContents.forEach(function(content) {
-        content.style.display = 'none';
+    document.querySelectorAll('.hidden-content').forEach(content => {
+        content.classList.remove('active');
     });
 
-    // Mostrar el contenido correspondiente
-    var contentToShow = document.getElementById(contentId);
-    if (contentToShow) {
-        contentToShow.style.display = 'block';
-    }
+    document.getElementById(contentId).classList.add('active');
 }
 
-// Mostrar contenido por defecto (Hoja de Ruta)
-window.onload = function() {
-    showContent('hoja-de-ruta');
-}
+// Mostrar la primera sección por defecto
+window.onload = () => showContent('hoja-de-ruta');

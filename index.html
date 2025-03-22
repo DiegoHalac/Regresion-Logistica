@@ -8,35 +8,33 @@
 </head>
 <body>
 
-    <!-- Barra de navegación principal -->
-    <div class="navbar">
+    <!-- Navbar principal -->
+    <header class="navbar">
         <h1>Regresión Logística</h1>
         <h2>Segundo Año</h2>
-    </div>
+    </header>
 
-    <!-- Barra de navegación con enlaces a las secciones -->
+    <!-- Barra de navegación con enlaces -->
     <nav>
-        <a href="javascript:void(0);" onclick="showContent('hoja-de-ruta')">Hoja de Ruta</a>
-        <a href="javascript:void(0);" onclick="showContent('material-teorico')">Material Teórico</a>
-        <a href="javascript:void(0);" onclick="showContent('clases')">Clases</a>
-        <a href="javascript:void(0);" onclick="showContent('otros-recursos')">Otros Recursos</a>
-        <a href="javascript:void(0);" onclick="showContent('contacto')">Contacto</a>
+        <a href="#" onclick="showContent('hoja-de-ruta')">Hoja de Ruta</a>
+        <a href="#" onclick="showContent('material-teorico')">Material Teórico</a>
+        <a href="#" onclick="showContent('clases')">Clases</a>
+        <a href="#" onclick="showContent('otros-recursos')">Otros Recursos</a>
+        <a href="#" onclick="showContent('contacto')">Contacto</a>
     </nav>
 
-    <!-- Contenido (se muestra por defecto Hoja de Ruta) -->
-    <div class="content">
-        <!-- Hoja de Ruta (inicialmente visible) -->
+    <!-- Contenido -->
+    <section class="content">
         <div class="hidden-content" id="hoja-de-ruta">
             <h3>Hoja de Ruta</h3>
             <ul>
+                <li>Intro MV: <a href="PRESENTACIONES/intro_MV.html" target="_blank">Clase 0</a></li> 
                 <li>17 de mayo: Clase 1</li>
                 <li>6 de junio: Clase 2</li>
                 <li>27 de junio: Clase 3</li>
                 <li>12 de julio: EXAMEN</li>
             </ul>
         </div>
-
-        <!-- Material Teórico (oculto por defecto) -->
         <div class="hidden-content" id="material-teorico">
             <h3>Material Teórico</h3>
             <ul>
@@ -46,24 +44,18 @@
                 <li><a href="LIBROS/HARRELL.pdf" target="_blank">HARRELL</a></li>
             </ul>
         </div>
-
-        <!-- Clases (oculto por defecto) -->
         <div class="hidden-content" id="clases">
             <h3>Clases</h3>
             <ul>
-                <li><a href="PRESENTACIONES/intro_MV.html" target="_blank">Clase 1: Introducción a la Regresión Logística (Video)</a></li>
+                <li><a href="PRESENTACIONES/intro_MV.html" target="_blank">Clase 0: Introducción a la Regresión Logística (Video)</a></li>
             </ul>
         </div>
-
-        <!-- Otros Recursos (oculto por defecto) -->
         <div class="hidden-content" id="otros-recursos">
             <h3>Otros Recursos</h3>
             <ul>
                 <li><a href="https://www.youtube.com/watch?v=yIYKR4sgzI8&list=PLblh5JKOoLUKxzEP5HA2d-Li7IJkHfXSe" target="_blank">StatQuest</a></li>
             </ul>
         </div>
-
-        <!-- Información de contacto (oculto por defecto) -->
         <div class="hidden-content" id="contacto">
             <h3>Contacto</h3>
             <p>Si tienes alguna pregunta o necesitas más información:  
@@ -74,11 +66,9 @@
             </p>
             <p>Email: <a href="mailto:diego.halac@sasm.com.ar">diego.halac@sasm.com.ar</a></p>
         </div>
-    </div>
+    </section>
+
     <script src="script.js"></script>
+
 </body>
 </html>
-
-
-
-
